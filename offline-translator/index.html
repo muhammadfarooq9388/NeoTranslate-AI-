@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>VIP Offline Translator</title>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>
+      English ↔ <span>Urdu</span> Translator
+    </h1>
+
+    <div class="subtitle">
+      Translate English to Urdu and Urdu to English
+    </div>
+
+    <textarea
+      id="inputText"
+      placeholder="Enter text here..."
+    ></textarea>
+
+    <button
+      class="btn"
+      onclick="translateText()"
+    >
+      Translate ↔
+    </button>
+    <button
+    class="swap-btn"
+    onclick="swapLanguage()"
+>
+    Swap Language ↔
+</button>
+<div class="output-box">
+
+    <div class="output-title">
+        Translation:
+    </div>
+
+    <div id="output">
+        Result will appear here...
+    </div>
+
+    <button
+        class="copy-btn"
+        onclick="copyText()"
+    >
+        Copy Translation 📋
+    </button>
+
+</div>
+
+   
+
+    <footer>
+      © 2026 VIP Offline Translator
+    </footer>
+
+  </div>
+
+  <script src="assets/js/dictionary.js"></script>
+  <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
